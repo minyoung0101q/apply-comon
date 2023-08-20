@@ -1,0 +1,154 @@
+/* 기본 정보 아래 밑줄 */
+.join {
+  width: 1070px;
+}
+/* 동아리 지원하기 제목 */
+.join .title {
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* 기본 정보 작은 제목*/
+.join .small-title {
+  font-size: 24px;
+  padding: 15px;
+  border-bottom: 0.5px solid black; /* 기본 정보 아래 선 */
+}
+.join .contents {
+  margin: 30px;
+}
+.join .contents .input {
+  margin-top: -20px;
+  display: flex; /* 수평 */
+  align-items: left;
+}
+.join .input-label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* wordbox: 내용을 입력해주세요 */
+.input-wordbox {
+  width: 300px;
+  height: 40px;
+  margin-right: 20px;
+}
+/* dropdown */
+.input-dropdown {
+  width: 150px;
+  height: 40px;
+  margin-right: 20px;
+}
+/* 관심 분야 */
+.join .contents .content {
+  display: flex;
+  align-items: left;
+}
+/*orange box*/
+.interests {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgb(252, 176, 46);
+  color: white;
+  text-align: center;
+  line-height: 20px;
+}
+
+.interest {
+  font-size: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgb(252, 176, 46);
+  color: white;
+  text-align: center;
+  line-height: 20px;
+}
+.minus {
+  font-size: 10px;
+  margin-top: 0.5px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 66px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  background-color: white;
+  width: 10px;
+  cursor: pointer;
+}
+
+/*끝*/
+.advice {
+  text-align: center;
+  font-size: 16px;
+}
+
+.bluebutton {
+  margin: 0px auto;
+  align-items: center;
+  width: 300px;
+  height: 120px;
+  color: #fff;
+  background-color: rgb(48, 156, 228);
+  font-size: 40px;
+  text-align: center;
+  line-height: 120px;
+  cursor: pointer;
+}
+
+/* Message (하고 싶은 말) */
+.textarea-message {
+  width: 1000px;
+  height: 250px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* 반응형 스타일 추가 */
+@media (max-width: 768px) {
+  .join {
+    width: auto; /* 화면 크기에 따라 가로 길이 자동 조정 */
+  }
+
+  .join .title {
+    font-size: 28px; /* 제목 크기 조정 */
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .join .contents .input {
+    flex-direction: column; /* 작은 화면에서 수직으로 배치 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+  }
+
+  .input-wordbox,
+  .input-dropdown {
+    width: 100%; /* 가로 너비 100%로 조정 */
+    margin: 10px 0; /* 간격 조정 */
+  }
+
+  .textarea-message {
+    width: 100%; /* 가로 너비 100%로 조정 */
+    height: 150px; /* 높이 조정 */
+    font-size: 14px;
+    padding: 5px; /* 간격 조정 */
+  }
+}
