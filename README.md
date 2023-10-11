@@ -4,4 +4,4 @@
 > https://github.com/BCU-ComOn/ComOn/tree/Lee-min-Young
 >
 > **보완한 점** <br />
-> 반응형 CSS로 구현
+> 현재 repository 코드 => 반응형 CSS로 구현됨
